@@ -1,6 +1,8 @@
 # koders
 Mobile version of kodilan.com built with erste.js
 
+<img width="1295" alt="koders" src="https://user-images.githubusercontent.com/61799852/125201918-dce75380-e279-11eb-9478-c6a7f13e4bd4.jpg">
+
 ## Set up
 Clone and setup the repository:
 
