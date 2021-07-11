@@ -37,3 +37,51 @@ h6 {
 p {
   margin: 0;
 }
+
+/* tags */
+.full-time,
+.part-time,
+.intern {
+  display: block;
+  width: 5rem;
+  max-height: 2rem;
+  font-size: 0.7rem;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.full-time {
+  color: var(--blue-color);
+  background-color: #f1f7fc;
+  border: 0.06rem solid var(--blue-color);
+}
+
+.part-time {
+  color: var(--orange-color);
+  background-color: #fef6f0;
+  border: 0.06rem solid var(--orange-color);
+}
+
+.intern {
+  color: var(--yellow-color);
+  background-color: #fdfcf2;
+  border: 0.06rem solid var(--yellow-color);
+}
+
+.loading {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .full-time,
+  .part-time,
+  .intern {
+    width: 4rem;
+    max-height: 1.5rem;
+    font-size: 0.5rem;
+  }
+}
