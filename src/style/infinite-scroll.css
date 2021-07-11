@@ -1,0 +1,13 @@
+inf-scroll {
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  color: var(--placeholder-color);
+  line-height: 2.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.spinner {
+  position: relative;
+}

@@ -1,0 +1,39 @@
+:root {
+  --background-color: #f8f8f8;
+  --primary-color: #333333;
+  --accent-color: #26ae61;
+  --button-color: #5c5c5c;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --blue-color: #186fc9;
+  --orange-color: #f1630d;
+  --yellow-color: #dfb634;
+  --placeholder-color: #999999;
+  --tab-disable-color: #777777;
+  --header-title-color: #5c5c5c;
+  --divider-color: #dddddd;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+button {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}

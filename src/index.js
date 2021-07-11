@@ -1,4 +1,4 @@
-import application from './application'
+import Application from './application'
 
 const onDeviceReady = () => {
   document.body.classList.add(cfg.PLATFORM)
@@ -11,7 +11,7 @@ const onDeviceReady = () => {
 
     document.body.classList.add(device.platform)
   }
-  application()
+  new Application()
 }
 
 document.addEventListener('deviceready', onDeviceReady)
