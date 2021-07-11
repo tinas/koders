@@ -1,18 +1,98 @@
 .main-view {
+  display: grid;
+  grid-template-rows: [header] 10rem [list] 1fr;
+  background: var(--background-color);
+}
+
+.container {
+  grid-row: header;
+  padding: 0 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.logo {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.menu button {
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  color: var(--button-color);
+  font-size: 1.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.2rem;
+  padding: 0.75rem;
+  background: var(--white-color);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.1rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.search span {
+  font-size: 0.75rem;
+  color: var(--placeholder-color);
+}
+
+.search-icon svg {
+  margin-top: 0.2rem;
+  color: var(--accent-color);
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tab-navigation button {
+  height: 1.75rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--tab-disable-color);
+}
+
+.tab-navigation .active {
+  color: var(--primary-color);
+  border-bottom: 0.1rem solid var(--accent-color);
+}
+
+.post-list-container {
+  grid-row: list;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  top: 0px;
+  background: var(--white-color);
 }
 
-.main-view img {
-  height: 100pt;
-  transition: opacity 1s;
+.post-list-container .list-area {
+  flex-grow: 2;
 }
 
-.main-view h1 {
-  font-weight: 100;
-  font-size: 30pt;
-  margin: 50pt 0;
-  text-align: center;
+.post-list-container .scroll {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .tab-navigation button {
+    height: 1.5rem;
+    font-size: 0.75rem;
+  }
 }

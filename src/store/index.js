@@ -5,6 +5,11 @@ import actionsDefinitions from './actions'
 import mutationsDefinitions from './mutations'
 
 const initialState = {
+  currentPageIndex: 1,
+  lastPageIndex: 1,
+  activePeriod: '',
+  recentPosts: null,
+  allPosts: null
 }
 
 const store = regie({initialState, actions: actionsDefinitions, mutations: mutationsDefinitions})
