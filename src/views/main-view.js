@@ -1,6 +1,8 @@
 import {View, InfiniteScroll} from 'erste'
 import {state, actions} from '../store'
 
+import DetailView from '../views/detail/detail-view'
+
 import PostList from '../components/post/post-list'
 import EmptyPostList from '../components/post/empty-post-list'
 import Loader from '../components/loader'
@@ -126,6 +128,17 @@ export default class MainView extends View {
 
     actions.setActivePeriod(PERIODS.ALL_TIME)
     this.fetchPosts()
+  }
+
+  ['tap post-list-item'](e) {
+    const dataShowId = e.targetEl.getAttribute('data-show-id')
+
+    const post =
+      state.activePeriod == PERIODS.ALL_TIME
+        ? state.allPosts.data.find(p => p.slug == dataShowId)
+        : state.recentPosts.data.find(p => p.slug == dataShowId)
+
+    this.vm.pull(new DetailView(this.vm, post), true)
   }
 
   template() {
