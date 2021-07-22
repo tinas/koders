@@ -25,8 +25,6 @@ post-list-item + post-list-item {
 .company-logo {
   grid-column: logo;
   margin-top: 0.3rem;
-  width: 3rem;
-  height: 3rem;
   border-radius: 0.2rem;
   object-fit: contain;
 }
@@ -43,49 +41,6 @@ post-list-item + post-list-item {
 
 .tag {
   grid-column: badge;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: flex-end;
-}
-
-.timeago {
-  font-size: 0.6rem;
-  color: var(--placeholder-color);
-}
-
-.company-detail {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.8rem;
-}
-
-.company-detail button {
-  display: flex;
-  gap: 0.2rem;
-  text-align: left;
-  font-size: 0.6rem;
-  color: var(--placeholder-color);
-}
-
-.company-detail button span {
-  color: var(--accent-color);
-}
-
-.post-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: 0.6rem;
-}
-
-.post-tag {
-  padding: 0.2rem 0.4rem;
-  border: 0.06rem solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.2rem;
-  font-size: 0.6rem;
-  white-space: nowrap;
-  color: var(--accent-color);
 }
 
 .empty-posts {
